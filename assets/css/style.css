@@ -1,0 +1,148 @@
+:root {
+	/* color */
+	--primary-color: #b689c0;
+	--btn-color: #6a67ce;
+	--heading-color: #947ec3;
+
+	/* Font */
+	--heading-font: "Playfair Display", serif;
+	--main-font: "Poppins", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: var(--main-font);
+}
+
+.container {
+	max-width: 1420px;
+}
+
+.section-margin {
+	margin-top: 250px;
+}
+
+/* Navbar Start */
+.navbar {
+	height: 140px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar .container {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container .logo {
+	font-family: var(--heading-font);
+	font-weight: 800;
+	font-size: 30px;
+	color: var(--primary-color);
+	/* background-color: salmon; */
+	margin-top: -20px;
+}
+
+.container .logo span {
+	color: var(--heading-color);
+}
+
+.navbar .container .menu-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.container .menu-wrapper .menu {
+	margin: 0 auto;
+}
+
+.menu-wrapper .menu a {
+	font-family: var(--main-font);
+	font-size: 18px;
+	font-weight: 400;
+	color: #947ec3;
+	margin: 0 20px;
+}
+
+.menu-wrapper .menu a.active {
+	font-weight: 800;
+	color: var(--primary-color);
+}
+
+.menu-wrapper .icons {
+	font-size: 25px;
+}
+
+.menu-wrapper .icons .icon {
+	margin-right: 20px;
+	color: var(--primary-color);
+}
+
+.container .hamburgerMenu {
+	font-size: 50px;
+	color: var(--primary-color);
+}
+
+.container .hamburgerMenu,
+.container .menuClose {
+	display: none;
+}
+/* Navbar End */
+
+/* Responsive */
+/* Tablet */
+@media screen and (max-width: 768px) {
+	.navbar .container {
+		padding: 0 20px;
+	}
+	.container .hamburgerMenu,
+	.container .menuClose {
+		display: initial;
+	}
+	.navbar .container .menu-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: var(--primary-color);
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+		transition: 0.3s ease-in-out;
+	}
+	.navbar .container .menu-wrapper.active {
+		clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+		transition: 0.3s ease-in-out;
+	}
+	.menu-wrapper .icons i {
+		color: var(--btn-color) !important;
+	}
+	.menu-wrapper .menu a {
+		display: block;
+		margin: 50px 0;
+		color: rgb(109, 36, 105);
+	}
+	.menu-wrapper .menu a.active {
+		color: var(--btn-color);
+	}
+	.menu-wrapper .menuClose {
+		font-size: 40px;
+		color: var(--btn-color);
+		position: absolute;
+		top: 50px;
+		right: 50px;
+	}
+}
