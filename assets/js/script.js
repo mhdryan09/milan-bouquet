@@ -6,6 +6,11 @@ $(document).ready(() => {
   $('.menuClose').click(() => {
     $('.menu-wrapper').removeClass('active')
   });
+
+  // ketika scroll navbar melebihi tinggi dari navbar tersebut
+  $(document).scroll(() => {
+    $('.navbar').toggleClass('active', $(this).scrollTop() > $('.navbar').height())
+  })
 });
 
 var swiper = new Swiper(".mySwiperHome", {
