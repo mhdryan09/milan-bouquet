@@ -411,7 +411,7 @@
 	margin-top: 50px;
 }
 .product .row2 .card-product .product-name {
-	font-size: 28px;
+	font-size: 25px;
 	color: #fff;
 	font-weight: 600;
 	font-family: var(--heading-font);
@@ -561,6 +561,20 @@
 		gap: 20px;
 		margin: auto;
 	}
+
+	.product .container {
+		padding: 0 20px;
+	}
+	.product .row1 {
+		flex-wrap: wrap;
+	}
+	.product .row1 .label {
+		text-align: left;
+	}
+	.product .row1 .btn-slider {
+		margin-top: 10px;
+		margin-left: auto;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -616,5 +630,9 @@
 	}
 	.banner .row2 .banner-right {
 		gap: 20px;
+	}
+	.product .container .row1 .label {
+		width: 335px;
+		font-size: 0.9rem;
 	}
 }
