@@ -268,7 +268,8 @@
 
 .service .row1 .title,
 .product .row1 .title,
-.banner .row1 .title {
+.banner .row1 .title,
+.testimonial .content-left .title {
 	font-size: 30px;
 	font-weight: 800;
 	font-family: var(--heading-font);
@@ -447,8 +448,80 @@
 .row2 .card-product .card-buy i {
 	color: var(--btn-color);
 }
-
 /* Product End */
+/* Testimonial Start */
+.testimonial {
+	margin-top: 250px;
+}
+.testimonial .container {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.testimonial .container .content-left {
+	max-width: 450px;
+}
+.testimonial .container .content-right {
+	max-width: 700px;
+}
+.testimonial .content-left .label {
+	font-size: 20px;
+	color: var(--heading-color);
+	margin-top: 10px;
+}
+.testimonial .content-left .sublabel {
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 30px;
+}
+.testimonial .content-right .card-testi {
+	background-color: #b689c0;
+	border-radius: 50px 10px;
+	padding: 60px 30px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.testimonial .content-right .card-testi .date {
+	position: absolute;
+	color: #fff;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+}
+.testimonial .content-right .card-testi .card-profile {
+	text-align: center;
+}
+.testimonial .content-right .card-testi .card-profile .card-profile-name {
+	font-weight: 800;
+	font-size: 20px;
+	color: var(--btn-color);
+	margin-top: 15px;
+	font-family: var(--main-font);
+}
+.testimonial .content-right .card-testi .card-profile .location {
+	margin-top: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+.testimonial .content-right .card-testi .card-quote {
+	width: 460px;
+	margin: auto;
+	margin-left: 30px;
+}
+.testimonial .content-right .card-testi .card-quote i {
+	font-size: 50px;
+	color: var(--btn-color);
+}
+.testimonial .content-right .card-testi .card-quote .card-quote-text {
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+	padding-left: 40px;
+	max-width: 400px;
+}
+
+/* Testimonial End */
 
 /* Responsive */
 /* Tablet */
