@@ -25,3 +25,12 @@ var swiper = new Swiper(".mySwiperHome", {
     delay: 2000
   }
 });
+
+var swiper = new Swiper(".mySwiperProduct", {
+  slidesPerView: "auto",
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".bxs-chevron-right-square",
+    prevEl: ".bxs-chevron-left-square",
+  },
+});
