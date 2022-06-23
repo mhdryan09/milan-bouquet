@@ -124,14 +124,14 @@
 /* .container .content-left {
 	max-width: 600px;
 } */
-.container .content-left .heading {
+.home .container .content-left .heading {
 	font-family: var(--heading-font);
 	font-weight: 800;
 	font-size: 35px;
 	color: var(--heading-color);
 }
 
-.container .content-left .subheading {
+.home .container .content-left .subheading {
 	font-size: 18px;
 	font-weight: 300;
 	color: #5d5a5e;
@@ -139,11 +139,11 @@
 	margin-top: 15px;
 }
 
-.content-left .btn-home {
+.home .content-left .btn-home {
 	margin-top: 120px;
 }
 
-.btn-home .btn-explore {
+.home .btn-home .btn-explore {
 	padding: 16px 24px;
 	background-color: var(--btn-color);
 	color: #fff;
@@ -155,13 +155,13 @@
 	border: 2px solid var(--btn-color);
 }
 
-.btn-home .btn-explore:hover {
+.home .btn-home .btn-explore:hover {
 	background-color: #fff;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 }
 
-.btn-home .btn-learn {
+.home .btn-home .btn-learn {
 	padding: 16px 24px;
 	border-radius: 8px;
 	display: inline-block;
@@ -172,20 +172,20 @@
 	color: var(--heading-color);
 }
 
-.btn-home .btn-learn:hover {
+.home .btn-home .btn-learn:hover {
 	background-color: var(--btn-color);
 	color: #fff;
 }
 
-.container .content-right {
+.home .container .content-right {
 	max-width: 500px;
 }
 
-.content-right .swiper-wrapper {
+.home .content-right .swiper-wrapper {
 	padding-bottom: 60px;
 }
 
-.content-right .swiper-wrapper img {
+.home .content-right .swiper-wrapper img {
 	display: block;
 	margin: auto;
 	margin-top: -100px;
@@ -452,6 +452,8 @@
 /* Testimonial Start */
 .testimonial {
 	margin-top: 250px;
+	background-color: #bc78cb4a;
+	padding: 30px 0;
 }
 .testimonial .container {
 	margin: auto;
@@ -476,6 +478,7 @@
 }
 .testimonial .content-right .card-testi {
 	background-color: #b689c0;
+	border: 2px solid #fff;
 	border-radius: 50px 10px;
 	padding: 60px 30px;
 	display: flex;
@@ -648,6 +651,21 @@
 		margin-top: 10px;
 		margin-left: auto;
 	}
+	.testimonial .container {
+		flex-wrap: wrap;
+		padding: 0 20px;
+	}
+	.testimonial .content-right {
+		width: 100%;
+		margin-top: 50px;
+	}
+	.testimonial .card-testi {
+		margin-top: 20px;
+		padding: 40px 10px;
+	}
+	.testimonial .card-testi img {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -707,5 +725,21 @@
 	.product .container .row1 .label {
 		width: 335px;
 		font-size: 0.9rem;
+	}
+	.testimonial .card-testi {
+		display: flex;
+		flex-direction: column;
+	}
+	.testimonial .card-testi .card-profile img {
+		width: 50%;
+	}
+	.testimonial .content-right .card-testi .card-quote {
+		width: 280px;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.testimonial .card-testi .card-quote .card-quote-text {
+		width: 100%;
+		padding-left: 0;
 	}
 }

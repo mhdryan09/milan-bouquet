@@ -46,6 +46,15 @@ var swiper = new Swiper(".mySwiperProduct", {
       slidesPerView: 4,
       spaceBetween: 40,
     }
+  }
+});
 
+var swiper = new Swiper(".mySwiperTesti", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  autoplay: {
+    delay: 2000
   }
 });
