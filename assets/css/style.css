@@ -16,6 +16,7 @@
 	text-decoration: none;
 	font-family: var(--main-font);
 	transition: all 0.4s ease-in-out;
+	list-style: none;
 }
 
 .container {
@@ -584,6 +585,62 @@
 }
 /* Contact End */
 
+/* Footer Start */
+.footer {
+	margin-top: 250px;
+	background-color: #bc78cb4a;
+	border-radius: 35px 35px 0px 0px;
+}
+.footer .container {
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.footer .container .row1 {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px 0;
+}
+.footer .container .row1 .content-left .phone {
+	color: var(--btn-color);
+	margin: 20px 0;
+	font-weight: 700;
+}
+.footer .container .row1 .content-left .icons i {
+	color: var(--primary-color);
+	font-size: 40px;
+	margin-top: 50px;
+}
+.footer .container .row1 .content-right {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 80px;
+}
+.footer .container .row1 .content-right > div {
+	margin: 0 50px;
+}
+.footer .container .row1 .content-right h3 {
+	color: var(--btn-color);
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.footer .container .row1 .content-right li {
+	margin-bottom: 20px;
+	color: var(--primary-color);
+	font-weight: 3000;
+}
+.footer .container .row1 .content-right .col4 {
+	width: 250px;
+}
+.footer .container .row1 .content-right .col4 .maps {
+	display: block;
+	margin-top: 30px;
+}
+.footer .row2 {
+	text-align: center;
+}
+/* Footer End */
+
 /* Responsive */
 /* Tablet */
 @media screen and (max-width: 768px) {
@@ -746,6 +803,29 @@
 		width: 100%;
 		padding: 20px 30px;
 	}
+	.footer {
+		padding-bottom: 30px;
+	}
+	.footer .container {
+		padding: 0 20px;
+	}
+	.footer .row1 {
+		flex-wrap: wrap;
+	}
+	.footer .row1 .content-left .logo {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.footer .container .row1 .content-right {
+		flex-wrap: wrap;
+		margin-left: 0;
+		justify-content: left;
+	}
+	.footer .container .row1 .content-right > div {
+		margin: 0;
+		margin-top: 50px;
+		margin-right: 80px;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -824,5 +904,9 @@
 	}
 	.contact .content-right {
 		width: 100%;
+	}
+	.footer {
+		margin-top: 150px;
+		border-radius: 25px 25px 0 0;
 	}
 }
